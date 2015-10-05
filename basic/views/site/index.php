@@ -2,50 +2,40 @@
 
 /* @var $this yii\web\View */
 
-$this->title = 'My Yii Application';
+$this->title = 'NursesShift : Διαχείριση Βαρδιών';
 ?>
 <div class="site-index">
 
     <div class="jumbotron">
-        <h1>Congratulations!</h1>
+        <h1>NursesShift</h1>
 
-        <p class="lead">You have successfully created your Yii-powered application.</p>
+        <p class="lead">Σύστημα Διαχείρισης Βαρδιών Νοσοκόμων.</p>
 
-        <p><a class="btn btn-lg btn-success" href="http://www.yiiframework.com">Get started with Yii</a></p>
     </div>
 
     <div class="body-content">
 
         <div class="row">
             <div class="col-lg-4">
-                <h2>Heading</h2>
+                <h2>Στόχος</h2>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
+                <p>Στα πλαίσια των σεμιναρίων της Μονάδας Αριστείας ΕΛ/ΛΑΚ Ιωαννίνων, ζητήθηκε από τους συμμετέχοντες, ειδικά σε αυτούς που δεν έχουν προγραμματιστικό υπόβαθρο, να δώσουν ιδέες για το τι θα μπορούσε να ωφελήσει την εργασία τους, σε μία από τις θεματικές της ΜΑ ΕΛ/ΛΑΚ Ιωαννίνων (Περιβάλλον-Αγροτική Ανάπτυξη, Υγεία, Δημόσια Διοίκηση), βασισμένο όμως σε τεχνολογίες ΕΛ/ΛΑΚ που ήδη είχαν παρουσιαστεί.</p>
 
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/doc/">Yii Documentation &raquo;</a></p>
             </div>
             <div class="col-lg-4">
-                <h2>Heading</h2>
+                <h2>Που απευθύνεται</h2>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
+                <p>Το πρόβλημα κατάρτισης και τήρησης ενός προγράμματος βαρδιών δεν έχει αποκλειστική εφαρμογή στα νοσοκομεία. Όπου υπάρχει ανάγκη εκ περιτροπής εργασίας στο δημόσιο ή στον ιδιωτικό τομέα (π.χ. υπηρεσίες φύλαξης, εργοστάσια κτλ) και με κάποιες μετατροπές στον κώδικα, που θα διατίθεται ελεύθερα από τα αποθετήρια του ΕΛ/ΛΑΚ, θα είναι εύκολη πλέον υπόθεση να σχεδιαστεί πρόγραμμα βαρδιών..</p>
 
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/forum/">Yii Forum &raquo;</a></p>
             </div>
             <div class="col-lg-4">
-                <h2>Heading</h2>
+                <h2>Συνεισφορά</h2>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
+                <p>Το NursesShift ξεκίνησε στα πλαίσια της Μονάδας Αριστείας ΕΛ/ΛΑΚ Ιωαννίνων, ενώ έχει επιλεχτεί για ενίσχυση
+                    έργου από την ΕΕΛ/ΛΑΚ. 
+                    Είναι ανοιχτού κώδικα και διατίθεται με βάση την άδεια EUPL. Μπορείτε να βρείτε τον κώδικα και να συνεισφέρετε στο project στο Github</p>
 
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/extensions/">Yii Extensions &raquo;</a></p>
+                <p><a class="btn btn-default" href="https://github.com/ellak-monades-aristeias/NursesShift/">NursesShift @github &raquo;</a></p>
             </div>
         </div>
 
