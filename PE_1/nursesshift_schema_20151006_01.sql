@@ -8,22 +8,22 @@ SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='TRADITIONAL,ALLOW_INVALID_DATES';
 
 -- -----------------------------------------------------
--- Schema mydb
+-- Schema nursesshift
 -- -----------------------------------------------------
-DROP SCHEMA IF EXISTS `mydb` ;
+DROP SCHEMA IF EXISTS `nursesshift` ;
 
 -- -----------------------------------------------------
--- Schema mydb
+-- Schema nursesshift
 -- -----------------------------------------------------
-CREATE SCHEMA IF NOT EXISTS `mydb` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci ;
-USE `mydb` ;
+CREATE SCHEMA IF NOT EXISTS `nursesshift` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci ;
+USE `nursesshift` ;
 
 -- -----------------------------------------------------
--- Table `mydb`.`clinic`
+-- Table `nursesshift`.`clinic`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`clinic` ;
+DROP TABLE IF EXISTS `nursesshift`.`clinic` ;
 
-CREATE TABLE IF NOT EXISTS `mydb`.`clinic` (
+CREATE TABLE IF NOT EXISTS `nursesshift`.`clinic` (
   `ID` INT NOT NULL AUTO_INCREMENT COMMENT '',
   `cl_name` INT NOT NULL COMMENT '',
   `cl_proistamenos` VARCHAR(60) NOT NULL COMMENT '',
@@ -36,11 +36,11 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`nurse`
+-- Table `nursesshift`.`nurse`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`nurse` ;
+DROP TABLE IF EXISTS `nursesshift`.`nurse` ;
 
-CREATE TABLE IF NOT EXISTS `mydb`.`nurse` (
+CREATE TABLE IF NOT EXISTS `nursesshift`.`nurse` (
   `ID` INT NOT NULL COMMENT '',
   `nu_onoma` VARCHAR(60) CHARACTER SET 'utf8' COLLATE 'utf8_general_ci' NULL COMMENT '',
   `nu_epitheto` VARCHAR(60) NULL COMMENT '',
@@ -59,11 +59,11 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`shifts`
+-- Table `nursesshift`.`shifts`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`shifts` ;
+DROP TABLE IF EXISTS `nursesshift`.`shifts` ;
 
-CREATE TABLE IF NOT EXISTS `mydb`.`shifts` (
+CREATE TABLE IF NOT EXISTS `nursesshift`.`shifts` (
   `ID` INT NOT NULL COMMENT '',
   `sh_date` DATE NOT NULL COMMENT '',
   `sh_is_argia` TINYINT(1) NOT NULL COMMENT '',
@@ -76,11 +76,11 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`types`
+-- Table `nursesshift`.`types`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`types` ;
+DROP TABLE IF EXISTS `nursesshift`.`types` ;
 
-CREATE TABLE IF NOT EXISTS `mydb`.`types` (
+CREATE TABLE IF NOT EXISTS `nursesshift`.`types` (
   `ID` INT NOT NULL COMMENT '',
   `description` VARCHAR(45) NULL COMMENT '',
   `isReduced` TINYINT(1) NULL COMMENT '',
@@ -89,11 +89,11 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`nurse_shift`
+-- Table `nursesshift`.`nurse_shift`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`nurse_shift` ;
+DROP TABLE IF EXISTS `nursesshift`.`nurse_shift` ;
 
-CREATE TABLE IF NOT EXISTS `mydb`.`nurse_shift` (
+CREATE TABLE IF NOT EXISTS `nursesshift`.`nurse_shift` (
   `ID` INT NOT NULL COMMENT '',
   `ns_nurseID` INT NOT NULL COMMENT '',
   `ns_shiftID` INT NOT NULL COMMENT '',
@@ -105,17 +105,17 @@ CREATE TABLE IF NOT EXISTS `mydb`.`nurse_shift` (
   INDEX `fk_ns_type_idx` (`ns_type` ASC)  COMMENT '',
   CONSTRAINT `fk_ns_nurse`
     FOREIGN KEY (`ns_nurseID`)
-    REFERENCES `mydb`.`nurse` (`ID`)
+    REFERENCES `nursesshift`.`nurse` (`ID`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_ns_shift`
     FOREIGN KEY (`ns_shiftID`)
-    REFERENCES `mydb`.`shifts` (`ID`)
+    REFERENCES `nursesshift`.`shifts` (`ID`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_ns_type`
     FOREIGN KEY (`ns_type`)
-    REFERENCES `mydb`.`types` (`ID`)
+    REFERENCES `nursesshift`.`types` (`ID`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
