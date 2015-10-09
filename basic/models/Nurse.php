@@ -56,18 +56,18 @@ class Nurse extends \yii\db\ActiveRecord
     {
         return [
             'ID' => 'ID',
-            'nu_onoma' => 'Nu Onoma',
-            'nu_epitheto' => 'Nu Epitheto',
-            'nu_bathmida' => 'Nu Bathmida',
-            'nu_is_meiomenou' => 'Nu Is Meiomenou',
-            'nu_ores_ergasias' => 'Nu Ores Ergasias',
-            'nu_is_ekpaideuomanos' => 'Nu Is Ekpaideuomanos',
-            'ns_is_proistamenos' => 'Ns Is Proistamenos',
-            'nu_is_apospasmenos' => 'Nu Is Apospasmenos',
-            'nu_apospasmenos_perigafh' => 'Nu Apospasmenos Perigafh',
+            'nu_onoma' => 'Όνομα',
+            'nu_epitheto' => 'Επίθετο',
+            'nu_bathmida' => 'Βαθμίδα',
+            'nu_is_meiomenou' => 'Είναι Μειωμένου Ωραρίου',
+            'nu_ores_ergasias' => 'Ώρες Εργασίας',
+            'nu_is_ekpaideuomanos' => 'Εκπαιδευόμενος',
+            'ns_is_proistamenos' => 'Προϊστάμενος',
+            'nu_is_apospasmenos' => 'Αποσπασμένος',
+            'nu_apospasmenos_perigafh' => 'Αποσπασμένος Περιγραφή',
             'nu_upoloipo_adeias' => 'Nu Upoloipo Adeias',
             'nu_upoloipo_repo' => 'Nu Upoloipo Repo',
-            'nu_profile' => 'Nu Profile',
+            'nu_profile' => 'Προφίλ',
         ];
     }
 

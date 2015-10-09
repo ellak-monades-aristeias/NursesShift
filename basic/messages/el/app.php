@@ -18,8 +18,9 @@
  */
 return [
     'Incorrect username or password.' => 'Λάθος όνομα χρήστη ή κωδικός.',
-    'Ec Doctors' => 'Ιατροί',
-    'Create Ec Doctor' => 'Δημιουργία Νέου Ιατρού',
+    'Create Nurse' => 'Δημιουργία Νοσοκόμου',
+    'Nurses' => 'Νοσοκόμοι',
+    'Create' => 'Δημιουργία',
     'Update' => 'Ενημέρωση',
     'View' => 'Προβολή',
     'Yes' => 'Ναι',
