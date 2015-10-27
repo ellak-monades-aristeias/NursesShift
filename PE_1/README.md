@@ -6,7 +6,7 @@ NursesShift
 
 -   Ανάλυση απαιτήσεων
 
-    -    
+    -   https://github.com/ellak-monades-aristeias/NursesShift/blob/master/PE\_1/NursesShift\_analysis.docx
 
 -   Σχήμα Βάσης Δεδομένων.
 
@@ -14,6 +14,8 @@ NursesShift
         https://github.com/ellak-monades-aristeias/NursesShift/blob/master/PE\_1/nursesshift\_schema\_20151025\_01.sql
 
     -   Οπτική απεικόνιση του Σχήματος :
+
+![](<https://github.com/ellak-monades-aristeias/NursesShift/blob/master/PE_1/nursesshift_schema_20151006_01.png>)
 
  
 
@@ -24,7 +26,5 @@ NursesShift
 -   Σχεδιασμός Οθονών και Δομής προγράμματος.
 
     -   Εκκρεμεί
-
-![](<https://github.com/ellak-monades-aristeias/NursesShift/blob/master/PE_1/nursesshift_schema_20151006_01.png>)
 
  
