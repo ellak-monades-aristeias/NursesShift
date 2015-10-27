@@ -38,6 +38,9 @@ AppAsset::register($this);
         'items' => [
             ['label' => 'Αρχική', 'url' => ['/site/index']],
             ['label' => 'Σχετικά', 'url' => ['/site/about']],
+            ['label' => 'Νοσηλευτές', 'url' => ['/nurse/index'],  'visible' => !Yii::$app->user->isGuest ],
+            ['label' => 'Κλινική', 'url' => ['/clinic/index'],  'visible' => !Yii::$app->user->isGuest ],
+            ['label' => 'Τυποι Ωραρίου', 'url' => ['/types/index'],  'visible' => !Yii::$app->user->isGuest ],
             Yii::$app->user->isGuest ?
                 ['label' => 'Login', 'url' => ['/site/login']] :
                 [

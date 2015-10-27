@@ -32,8 +32,7 @@ class Clinic extends \yii\db\ActiveRecord
     {
         return [
             [['cl_name', 'cl_proistamenos', 'cl_tomearxhs', 'cl_dieuthunths', 'cl_phone1'], 'required'],
-            [['cl_name'], 'integer'],
-            [['cl_proistamenos', 'cl_tomearxhs', 'cl_dieuthunths'], 'string', 'max' => 60],
+            [['cl_name', 'cl_proistamenos', 'cl_tomearxhs', 'cl_dieuthunths'], 'string', 'max' => 60],
             [['cl_phone1', 'cl_phone2'], 'string', 'max' => 45],
         ];
     }

@@ -39,7 +39,6 @@ class Nurse extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['ID'], 'required'],
             [['ID', 'nu_is_meiomenou', 'nu_is_ekpaideuomanos', 'ns_is_proistamenos', 'nu_is_apospasmenos', 'nu_upoloipo_adeias', 'nu_upoloipo_repo'], 'integer'],
             [['nu_ores_ergasias'], 'number'],
             [['nu_onoma', 'nu_epitheto'], 'string', 'max' => 60],
@@ -65,8 +64,8 @@ class Nurse extends \yii\db\ActiveRecord
             'ns_is_proistamenos' => 'Προϊστάμενος',
             'nu_is_apospasmenos' => 'Αποσπασμένος',
             'nu_apospasmenos_perigafh' => 'Αποσπασμένος Περιγραφή',
-            'nu_upoloipo_adeias' => 'Nu Upoloipo Adeias',
-            'nu_upoloipo_repo' => 'Nu Upoloipo Repo',
+            'nu_upoloipo_adeias' => 'Υπόλοιπο Άδειας',
+            'nu_upoloipo_repo' => 'Υπόλοιπο Ρεπό',
             'nu_profile' => 'Προφίλ',
         ];
     }
@@ -86,5 +85,21 @@ class Nurse extends \yii\db\ActiveRecord
     public static function find()
     {
         return new NurseQuery(get_called_class());
+    }
+    
+    public static function dropdownNAIOXI() {
+            $dropdown[0] = 'OXI';
+            $dropdown[1] = 'NAI';
+
+            return $dropdown;
+    }
+    
+    public static function dropdownBathmida() {
+            $dropdown[0] = 'Π.Ε.';
+            $dropdown[1] = 'Τ.Ε.';
+            $dropdown[2] = 'Δ.Ε.';
+            $dropdown[3] = 'ΠΡΑΚΤΙΚΗ';
+
+            return $dropdown;
     }
 }

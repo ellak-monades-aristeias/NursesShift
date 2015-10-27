@@ -29,7 +29,6 @@ class Types extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['ID'], 'required'],
             [['ID', 'isReduced'], 'integer'],
             [['description'], 'string', 'max' => 45],
         ];

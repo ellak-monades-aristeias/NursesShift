@@ -24,6 +24,21 @@ $this->params['breadcrumbs'][] = $this->title;
             ],
         ]) ?>
     </p>
+    
+    <?php
+            $nu_is_meiomenou = $model::dropdownNAIOXI();
+            $is_meiomenou = $nu_is_meiomenou[$model->nu_is_meiomenou];
+            
+            $nu_is_ekpaideuomanos = $model::dropdownNAIOXI();
+            $is_ekpaideuomanos = $nu_is_ekpaideuomanos[$model->nu_is_ekpaideuomanos];
+            
+            $ns_is_proistamenos = $model::dropdownNAIOXI();
+            $is_proistamenos = $ns_is_proistamenos[$model->ns_is_proistamenos];
+            
+            $nu_is_apospasmenos = $model::dropdownNAIOXI();
+            $is_apospasmenos = $nu_is_apospasmenos[$model->nu_is_apospasmenos];
+                   
+    ?>
 
     <?= DetailView::widget([
         'model' => $model,
@@ -32,11 +47,27 @@ $this->params['breadcrumbs'][] = $this->title;
             'nu_onoma',
             'nu_epitheto',
             'nu_bathmida',
-            'nu_is_meiomenou',
+             [
+                'label' => 'Είναι μειωμένου ωραρίου;',
+                'format' => 'text',
+                'value' => $is_meiomenou
+            ],
             'nu_ores_ergasias',
-            'nu_is_ekpaideuomanos',
-            'ns_is_proistamenos',
-            'nu_is_apospasmenos',
+            [
+                'label' => 'Είναι εκπαιδευόμενος;',
+                'format' => 'text',
+                'value' => $is_ekpaideuomanos
+            ],
+            [
+                'label' => 'Είναι προϊστάμενος;',
+                'format' => 'text',
+                'value' => $is_proistamenos
+            ],            
+           [
+                'label' => 'Είναι προϊστάμενος;',
+                'format' => 'text',
+                'value' => $is_apospasmenos
+            ],  
             'nu_apospasmenos_perigafh',
             'nu_upoloipo_adeias',
             'nu_upoloipo_repo',
