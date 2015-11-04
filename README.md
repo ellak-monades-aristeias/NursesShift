@@ -34,12 +34,15 @@ Nurses Shift
 
  
 
+Πίνακας Παραδοτέων
+------------------
+
 | **Παραδοτέο**                                                        | **URL**                                                                  |
 |----------------------------------------------------------------------|--------------------------------------------------------------------------|
-| Ανάλυση απαιτήσεων- Σχεδιασμός βάσης - Σχεδιασμός περιπτώσεων χρήσης | https://github.com/ellak-monades-aristeias/NursesShift/tree/master/PE_1 |
+| Ανάλυση απαιτήσεων- Σχεδιασμός βάσης - Σχεδιασμός περιπτώσεων χρήσης | https://github.com/ellak-monades-aristeias/NursesShift/tree/master/PE\_1 |
 | Υλοποίηση λειτουργιών                                                | https://github.com/ellak-monades-aristeias/NursesShift/tree/master/basic |
 | Ολοκλήρωση συστήματος                                                | https://github.com/ellak-monades-aristeias/NursesShift/tree/master/basic |
-| Έλεγχος – Τεκμηρίωση – Υλικό Παρουσίασης                             | https://github.com/ellak-monades-aristeias/NursesShift/tree/master/PE_4 |
+| Έλεγχος – Τεκμηρίωση – Υλικό Παρουσίασης                             | https://github.com/ellak-monades-aristeias/NursesShift/tree/master/PE\_4 |
 
 >   Το έργο έχει εγκριθεί για Ενίσχυση Έργων Ανοιχτού Λογισμικού από την
 >   [ΕΕΛ/ΛΑΚ](<https://ellak.gr/>)

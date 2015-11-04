@@ -7,7 +7,7 @@ $this->title = 'NursesShift : Διαχείριση Βαρδιών';
 <div class="site-index">
 
     <div class="jumbotron">
-        <h1>NursesShift</h1>
+        <h1><img src="../views/images/logo.png"></h1>
 
         <p class="lead">Σύστημα Διαχείρισης Βαρδιών Νοσηλευτών.</p>
 
