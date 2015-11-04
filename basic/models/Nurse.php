@@ -42,7 +42,7 @@ class Nurse extends \yii\db\ActiveRecord
             [['ID', 'nu_is_meiomenou', 'nu_is_ekpaideuomanos', 'ns_is_proistamenos', 'nu_is_apospasmenos', 'nu_upoloipo_adeias', 'nu_upoloipo_repo'], 'integer'],
             [['nu_ores_ergasias'], 'number'],
             [['nu_onoma', 'nu_epitheto'], 'string', 'max' => 60],
-            [['nu_bathmida'], 'string', 'max' => 5],
+            [['nu_bathmida'], 'string', 'max' => 10],
             [['nu_apospasmenos_perigafh'], 'string', 'max' => 150],
             [['nu_profile'], 'string', 'max' => 300],
         ];
@@ -101,5 +101,13 @@ class Nurse extends \yii\db\ActiveRecord
             $dropdown[3] = 'ΠΡΑΚΤΙΚΗ';
 
             return $dropdown;
+    }
+    
+    public static function dropdown() {
+        $models = static::find()->all();
+        foreach ($models as $model) {
+            $dropdown[$model->ID] = $model->nu_onoma .' '. $model->nu_epitheto;
+        }
+        return $dropdown;
     }
 }

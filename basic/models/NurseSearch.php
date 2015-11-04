@@ -12,6 +12,7 @@ use app\models\Nurse;
  */
 class NurseSearch extends Nurse
 {
+    
     /**
      * @inheritdoc
      */
