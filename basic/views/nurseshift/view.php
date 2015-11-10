@@ -9,6 +9,7 @@ use yii\widgets\DetailView;
 $this->title = $model->ID;
 $this->params['breadcrumbs'][] = ['label' => Yii::t('app', 'Nurseshifts'), 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
+
 ?>
 <div class="nurseshift-view">
 

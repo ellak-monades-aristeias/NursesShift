@@ -18,7 +18,7 @@ class ShiftsSearch extends Shifts
     public function rules()
     {
         return [
-            [['sh_ID', 'sh_is_argia', 'sh_is_efhmeria', 'sh_is_weekend', 'sh_elaxisto_prosopiko'], 'integer'],
+            [['ID', 'sh_is_argia', 'sh_is_efhmeria', 'sh_is_weekend', 'sh_elaxisto_prosopiko'], 'integer'],
             [['sh_date', 'sh_bardia'], 'safe'],
         ];
     }
@@ -59,7 +59,7 @@ class ShiftsSearch extends Shifts
 
         // grid filtering conditions
         $query->andFilterWhere([
-            'sh_ID' => $this->sh_ID,
+            'ID' => $this->ID,
             'sh_date' => $this->sh_date,
             'sh_is_argia' => $this->sh_is_argia,
             'sh_is_efhmeria' => $this->sh_is_efhmeria,

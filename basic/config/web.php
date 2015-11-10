@@ -3,7 +3,7 @@
 $params = require(__DIR__ . '/params.php');
 
 $config = [
-    'id' => 'basic',
+    'id' => 'nursesshift',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
     'language' => 'el',
@@ -51,16 +51,8 @@ $config = [
                     ],
                 ],
             ],
-        ],           
-        'db' => require(__DIR__ . '/db.php'),
-        /*
-        'urlManager' => [
-            'enablePrettyUrl' => true,
-            'showScriptName' => false,
-            'rules' => [
-            ],
         ],
-        */
+        'db' => require(__DIR__ . '/db.php'),
     ],
     'params' => $params,
 ];

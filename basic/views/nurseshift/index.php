@@ -2,6 +2,7 @@
 
 use yii\helpers\Html;
 use yii\grid\GridView;
+use yii\helpers\ArrayHelper;
 
 /* @var $this yii\web\View */
 /* @var $searchModel app\models\NurseshiftSearch */
@@ -9,6 +10,8 @@ use yii\grid\GridView;
 
 $this->title = Yii::t('app', 'Nurseshifts');
 $this->params['breadcrumbs'][] = $this->title;
+$nurseModel = new \app\models\Nurse();
+
 ?>
 <div class="nurseshift-index">
 
@@ -18,7 +21,6 @@ $this->params['breadcrumbs'][] = $this->title;
     <p>
         <?= Html::a(Yii::t('app', 'Create Nurseshift'), ['create'], ['class' => 'btn btn-success']) ?>
     </p>
-
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
@@ -31,8 +33,12 @@ $this->params['breadcrumbs'][] = $this->title;
             'attribute' => 'ns_name',
             'label' => 'Όνομα Νοσηλευτή',
             'value' => function($model, $index, $dataColumn) {
-                return $model->profile->full_name;
-            }
+                // more optimized than $model->role->name;
+                $roleDropdown = \app\models\Nurse::dropdown();
+                return $roleDropdown[$model->ns_nurseID];
+            },
+            'filter' => \app\models\Nurse::dropdown(),
+            //'filter'=>ArrayHelper::map(\app\models\Nurse::find()->asArray()->all(), 'ID', 'nu_onoma', 'nu_epitheto'),
         ],     
             'ns_shiftID',
             'ns_type',

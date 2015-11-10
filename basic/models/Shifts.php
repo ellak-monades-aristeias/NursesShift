@@ -46,7 +46,7 @@ class Shifts extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'sh_ID' => Yii::t('app', 'Sh ID'),
+            'ID' => Yii::t('app', 'Sh ID'),
             'sh_date' => Yii::t('app', 'Sh Date'),
             'sh_is_argia' => Yii::t('app', 'Sh Is Argia'),
             'sh_is_efhmeria' => Yii::t('app', 'Sh Is Efhmeria'),
@@ -61,7 +61,7 @@ class Shifts extends \yii\db\ActiveRecord
      */
     public function getNurseShifts()
     {
-        return $this->hasMany(NurseShift::className(), ['ns_shiftID' => 'sh_ID']);
+        return $this->hasMany(NurseShift::className(), ['ns_shiftID' => 'ID']);
     }
 
     /**
