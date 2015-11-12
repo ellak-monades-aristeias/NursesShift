@@ -44,9 +44,7 @@ Nurses Shift
 | Ολοκλήρωση συστήματος                                                | https://github.com/ellak-monades-aristeias/NursesShift/tree/master/basic |
 <<<<<<< HEAD
 | Έλεγχος – Τεκμηρίωση – Υλικό Παρουσίασης                             | https://github.com/ellak-monades-aristeias/NursesShift/tree/master/PE\_4 |
-
->   Το έργο έχει εγκριθεί για Ενίσχυση Έργων Ανοιχτού Λογισμικού από την
->   [ΕΕΛ/ΛΑΚ](<https://ellak.gr/>)
+ 
 =======
 | Έλεγχος – Τεκμηρίωση – Υλικό Παρουσίασης                             | https://github.com/ellak-monades-aristeias/NursesShift/tree/master/PE_4 |
 >>>>>>> origin/master
