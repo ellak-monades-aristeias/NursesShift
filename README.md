@@ -42,11 +42,10 @@ Nurses Shift
 | Ανάλυση απαιτήσεων- Σχεδιασμός βάσης - Σχεδιασμός περιπτώσεων χρήσης | https://github.com/ellak-monades-aristeias/NursesShift/tree/master/PE\_1 |
 | Υλοποίηση λειτουργιών                                                | https://github.com/ellak-monades-aristeias/NursesShift/tree/master/basic |
 | Ολοκλήρωση συστήματος                                                | https://github.com/ellak-monades-aristeias/NursesShift/tree/master/basic |
-<<<<<<< HEAD
 | Έλεγχος – Τεκμηρίωση – Υλικό Παρουσίασης                             | https://github.com/ellak-monades-aristeias/NursesShift/tree/master/PE\_4 |
 
->   Το έργο έχει εγκριθεί για Ενίσχυση Έργων Ανοιχτού Λογισμικού από την
->   [ΕΕΛ/ΛΑΚ](<https://ellak.gr/>)
-=======
-| Έλεγχος – Τεκμηρίωση – Υλικό Παρουσίασης                             | https://github.com/ellak-monades-aristeias/NursesShift/tree/master/PE_4 |
->>>>>>> origin/master
+Project Description
+---------------
+NursesShift provides Clinics and Hospitals a better way to orgranise nurses shifts online, saving time and keeping an electronic record. 
+It's addressed to Clinics and Health personell, but can be easily used to any Shift orientated working environment.
+The project was implemented under the FOSS Unit Of Excellence of Ioannina.
