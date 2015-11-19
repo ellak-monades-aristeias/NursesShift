@@ -49,3 +49,4 @@ Project Description
 NursesShift provides Clinics and Hospitals a better way to orgranise nurses shifts online, saving time and keeping an electronic record. 
 It's addressed to Clinics and Health personell, but can be easily used to any Shift orientated working environment.
 The project was implemented under the FOSS Unit Of Excellence of Ioannina.
+=======
