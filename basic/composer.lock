@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "db8239198ccdad6b6954e8dcff7fc2ee",
-    "content-hash": "89dff4485cfa8694ee639c74ec487722",
+    "hash": "260d6c513ff9173cd832a504c21382c0",
+    "content-hash": "41e7c16d82ffbe4a8c5414fb7645505b",
     "packages": [
         {
             "name": "bower-asset/bootstrap",
@@ -58,16 +58,16 @@
         },
         {
             "name": "bower-asset/fullcalendar",
-            "version": "v2.3.2",
+            "version": "v2.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fullcalendar/fullcalendar.git",
-                "reference": "b48f3f2dbb71be46002833a611dc3fa7bb982a56"
+                "reference": "9aa9e4400ac72d53362706927ac3c902c8544032"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fullcalendar/fullcalendar/zipball/b48f3f2dbb71be46002833a611dc3fa7bb982a56",
-                "reference": "b48f3f2dbb71be46002833a611dc3fa7bb982a56",
+                "url": "https://api.github.com/repos/fullcalendar/fullcalendar/zipball/9aa9e4400ac72d53362706927ac3c902c8544032",
+                "reference": "9aa9e4400ac72d53362706927ac3c902c8544032",
                 "shasum": ""
             },
             "require": {
@@ -181,16 +181,16 @@
         },
         {
             "name": "bower-asset/jquery.inputmask",
-            "version": "3.2.2",
+            "version": "3.2.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/RobinHerbots/jquery.inputmask.git",
-                "reference": "ebceb88a131e1fbc159733a88a6778ffc02debab"
+                "reference": "4e39624ea093d23c34f340c5bd8ab4e3a0aea17d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/RobinHerbots/jquery.inputmask/zipball/ebceb88a131e1fbc159733a88a6778ffc02debab",
-                "reference": "ebceb88a131e1fbc159733a88a6778ffc02debab",
+                "url": "https://api.github.com/repos/RobinHerbots/jquery.inputmask/zipball/4e39624ea093d23c34f340c5bd8ab4e3a0aea17d",
+                "reference": "4e39624ea093d23c34f340c5bd8ab4e3a0aea17d",
                 "shasum": ""
             },
             "require": {
@@ -199,33 +199,17 @@
             "type": "bower-asset-library",
             "extra": {
                 "bower-asset-main": [
-                    "./dist/inputmask/inputmask.dependencyLib.jquery.js",
-                    "./dist/inputmask/inputmask.js",
-                    "./dist/inputmask/inputmask.extensions.js",
-                    "./dist/inputmask/inputmask.date.extensions.js",
-                    "./dist/inputmask/inputmask.numeric.extensions.js",
-                    "./dist/inputmask/inputmask.phone.extensions.js",
-                    "./dist/inputmask/inputmask.regex.extensions.js",
-                    "./dist/inputmask/jquery.inputmask.js",
-                    "./dist/jquery.inputmask.bundle.js",
-                    "./extra/dependencyLibs/inputmask.dependencyLib.jqlite.js",
-                    "./extra/dependencyLibs/inputmask.dependencyLib.js",
-                    "./extra/phone-codes/phone-be.js",
-                    "./extra/phone-codes/phone-codes.js",
-                    "./extra/phone-codes/phone-nl.js",
-                    "./extra/phone-codes/phone-ru.js",
-                    "./extra/phone-codes/phone-uk.js"
+                    "./dist/inputmask/inputmask.js"
                 ],
                 "bower-asset-ignore": [
-                    "**/.*",
-                    "qunit/",
-                    "nuget/",
-                    "tools/",
-                    "js/",
-                    "*.md",
-                    "build.properties",
-                    "build.xml",
-                    "jquery.inputmask.jquery.json"
+                    "**/*",
+                    "!dist/*",
+                    "!dist/inputmask/*",
+                    "!dist/min/*",
+                    "!dist/min/inputmask/*",
+                    "!extra/bindings/*",
+                    "!extra/dependencyLibs/*",
+                    "!extra/phone-codes/*"
                 ]
             },
             "license": [
@@ -312,12 +296,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/jquery-pjax.git",
-                "reference": "3f20897307cca046fca5323b318475ae9dac0ca0"
+                "reference": "2273861523f8da3e58311520d83105179620f2dc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/jquery-pjax/zipball/3f20897307cca046fca5323b318475ae9dac0ca0",
-                "reference": "3f20897307cca046fca5323b318475ae9dac0ca0",
+                "url": "https://api.github.com/repos/yiisoft/jquery-pjax/zipball/2273861523f8da3e58311520d83105179620f2dc",
+                "reference": "2273861523f8da3e58311520d83105179620f2dc",
                 "shasum": ""
             },
             "require": {
@@ -447,21 +431,201 @@
             "time": "2013-11-30 08:25:19"
         },
         {
+            "name": "kartik-v/mpdf",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kartik-v/mpdf.git",
+                "reference": "d48b421625a8760bea72fe2608ff76e77ce7fc0e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kartik-v/mpdf/zipball/d48b421625a8760bea72fe2608ff76e77ce7fc0e",
+                "reference": "d48b421625a8760bea72fe2608ff76e77ce7fc0e",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "php": ">=4.3.10"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "mpdf.php",
+                    "classes"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-1.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Ian N Back"
+                }
+            ],
+            "description": "A PHP class to generate PDF files from HTML with Unicode/UTF-8 and CJK support. This is a fork of the official mPDF library.",
+            "homepage": "http://www.mpdf1.com/mpdf/index.php",
+            "keywords": [
+                "pdf",
+                "php",
+                "utf-8"
+            ],
+            "time": "2015-06-18 15:13:20"
+        },
+        {
+            "name": "kartik-v/yii2-grid",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kartik-v/yii2-grid.git",
+                "reference": "cbb3ce2fa20171fd5ae13525621f60ea2caebd20"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kartik-v/yii2-grid/zipball/cbb3ce2fa20171fd5ae13525621f60ea2caebd20",
+                "reference": "cbb3ce2fa20171fd5ae13525621f60ea2caebd20",
+                "shasum": ""
+            },
+            "require": {
+                "kartik-v/yii2-krajee-base": "~1.7"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "kartik\\grid\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Kartik Visweswaran",
+                    "email": "kartikv2@gmail.com",
+                    "homepage": "http://www.krajee.com/"
+                }
+            ],
+            "description": "Yii 2 GridView on steroids. Various enhancements and utilities for the Yii 2.0 GridView widget.",
+            "homepage": "https://github.com/kartik-v/yii2-grid",
+            "keywords": [
+                "extension",
+                "grid",
+                "widget",
+                "yii2"
+            ],
+            "time": "2015-11-02 10:51:01"
+        },
+        {
+            "name": "kartik-v/yii2-krajee-base",
+            "version": "v1.7.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kartik-v/yii2-krajee-base.git",
+                "reference": "c0adff9d9762f4fd3bf0e7cd0000fcab0bf00f19"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kartik-v/yii2-krajee-base/zipball/c0adff9d9762f4fd3bf0e7cd0000fcab0bf00f19",
+                "reference": "c0adff9d9762f4fd3bf0e7cd0000fcab0bf00f19",
+                "shasum": ""
+            },
+            "require": {
+                "yiisoft/yii2-bootstrap": "@dev"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "kartik\\base\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Kartik Visweswaran",
+                    "email": "kartikv2@gmail.com",
+                    "homepage": "http://www.krajee.com/"
+                }
+            ],
+            "description": "Base library and foundation components for all Yii2 Krajee extensions.",
+            "homepage": "https://github.com/kartik-v/yii2-krajee-base",
+            "keywords": [
+                "base",
+                "extension",
+                "foundation",
+                "krajee",
+                "widget",
+                "yii2"
+            ],
+            "time": "2015-06-16 05:19:57"
+        },
+        {
+            "name": "kartik-v/yii2-mpdf",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/kartik-v/yii2-mpdf.git",
+                "reference": "f65fe859e01374545276d40428d6ff75e4985050"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kartik-v/yii2-mpdf/zipball/f65fe859e01374545276d40428d6ff75e4985050",
+                "reference": "f65fe859e01374545276d40428d6ff75e4985050",
+                "shasum": ""
+            },
+            "require": {
+                "kartik-v/mpdf": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "kartik\\mpdf\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD 3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Kartik Visweswaran",
+                    "email": "kartikv2@gmail.com",
+                    "homepage": "http://www.krajee.com/"
+                }
+            ],
+            "description": "A Yii2 wrapper component for the mPDF library which generates PDF files from UTF-8 encoded HTML.",
+            "homepage": "https://github.com/kartik-v/yii2-mpdf",
+            "keywords": [
+                "component",
+                "extension",
+                "html",
+                "mpdf",
+                "pdf",
+                "utf8",
+                "yii2"
+            ],
+            "time": "2015-04-21 15:19:01"
+        },
+        {
             "name": "philippfrenzel/yii2fullcalendar",
             "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/philippfrenzel/yii2fullcalendar.git",
-                "reference": "173f1bea6a1f7f750785995e5f088debed2d7e3e"
+                "reference": "d02137d4fb6e2a1e08404fe8f98565279d810f14"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/philippfrenzel/yii2fullcalendar/zipball/173f1bea6a1f7f750785995e5f088debed2d7e3e",
-                "reference": "173f1bea6a1f7f750785995e5f088debed2d7e3e",
+                "url": "https://api.github.com/repos/philippfrenzel/yii2fullcalendar/zipball/d02137d4fb6e2a1e08404fe8f98565279d810f14",
+                "reference": "d02137d4fb6e2a1e08404fe8f98565279d810f14",
                 "shasum": ""
             },
             "require": {
-                "bower-asset/fullcalendar": "2.3.* | 2.2.* | 2.1.*",
+                "bower-asset/fullcalendar": "2.4.* | 2.3.* | 2.2.*",
                 "php": ">=5.4.0",
                 "yiisoft/yii2": "*",
                 "yiisoft/yii2-jui": "*"
@@ -493,7 +657,7 @@
                 "fullcalendar",
                 "yii2"
             ],
-            "time": "2015-09-29 06:45:44"
+            "time": "2015-11-17 21:19:04"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -554,12 +718,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-framework.git",
-                "reference": "4ab21a5a82c23d1299c3e79c25eab5fb5905a7bb"
+                "reference": "c9afa6fb6f8b5748ebb18e5e001901788bd503a5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/4ab21a5a82c23d1299c3e79c25eab5fb5905a7bb",
-                "reference": "4ab21a5a82c23d1299c3e79c25eab5fb5905a7bb",
+                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/c9afa6fb6f8b5748ebb18e5e001901788bd503a5",
+                "reference": "c9afa6fb6f8b5748ebb18e5e001901788bd503a5",
                 "shasum": ""
             },
             "require": {
@@ -635,7 +799,7 @@
                 "framework",
                 "yii2"
             ],
-            "time": "2015-10-29 18:08:02"
+            "time": "2015-11-20 20:04:29"
         },
         {
             "name": "yiisoft/yii2-bootstrap",
@@ -643,12 +807,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-bootstrap.git",
-                "reference": "09a5bfe72c0141ad26281848f1ae9c3f42541f20"
+                "reference": "7644ecbc447907bac1e29fc6babc4b5e747523dd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-bootstrap/zipball/09a5bfe72c0141ad26281848f1ae9c3f42541f20",
-                "reference": "09a5bfe72c0141ad26281848f1ae9c3f42541f20",
+                "url": "https://api.github.com/repos/yiisoft/yii2-bootstrap/zipball/7644ecbc447907bac1e29fc6babc4b5e747523dd",
+                "reference": "7644ecbc447907bac1e29fc6babc4b5e747523dd",
                 "shasum": ""
             },
             "require": {
@@ -685,7 +849,7 @@
                 "bootstrap",
                 "yii2"
             ],
-            "time": "2015-10-25 21:18:48"
+            "time": "2015-11-20 18:20:01"
         },
         {
             "name": "yiisoft/yii2-composer",
@@ -869,12 +1033,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fzaninotto/Faker.git",
-                "reference": "4dd192e778f283bd1f86b89e7dd79c7ee41809d6"
+                "reference": "008e69f17a1286c29b8a60082119b7d6eee69082"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fzaninotto/Faker/zipball/4dd192e778f283bd1f86b89e7dd79c7ee41809d6",
-                "reference": "4dd192e778f283bd1f86b89e7dd79c7ee41809d6",
+                "url": "https://api.github.com/repos/fzaninotto/Faker/zipball/008e69f17a1286c29b8a60082119b7d6eee69082",
+                "reference": "008e69f17a1286c29b8a60082119b7d6eee69082",
                 "shasum": ""
             },
             "require": {
@@ -911,7 +1075,7 @@
                 "faker",
                 "fixtures"
             ],
-            "time": "2015-10-30 09:41:12"
+            "time": "2015-11-16 08:55:57"
         },
         {
             "name": "phpspec/php-diff",
@@ -953,12 +1117,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-codeception.git",
-                "reference": "22e981b8c93d9882ccd333ba001767a6b99aa9a1"
+                "reference": "ee239c244fd011f11c8827f97ebe7600d03f1841"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-codeception/zipball/22e981b8c93d9882ccd333ba001767a6b99aa9a1",
-                "reference": "22e981b8c93d9882ccd333ba001767a6b99aa9a1",
+                "url": "https://api.github.com/repos/yiisoft/yii2-codeception/zipball/ee239c244fd011f11c8827f97ebe7600d03f1841",
+                "reference": "ee239c244fd011f11c8827f97ebe7600d03f1841",
                 "shasum": ""
             },
             "require": {
@@ -990,7 +1154,7 @@
                 "codeception",
                 "yii2"
             ],
-            "time": "2015-10-29 09:02:25"
+            "time": "2015-11-20 08:52:21"
         },
         {
             "name": "yiisoft/yii2-debug",
@@ -998,12 +1162,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-debug.git",
-                "reference": "a8eba1bb9a7163df5120fb07c0c000e298a8bcf0"
+                "reference": "10bf9cf3dbb3cd30e29da059d778d3c55573cde0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-debug/zipball/a8eba1bb9a7163df5120fb07c0c000e298a8bcf0",
-                "reference": "a8eba1bb9a7163df5120fb07c0c000e298a8bcf0",
+                "url": "https://api.github.com/repos/yiisoft/yii2-debug/zipball/10bf9cf3dbb3cd30e29da059d778d3c55573cde0",
+                "reference": "10bf9cf3dbb3cd30e29da059d778d3c55573cde0",
                 "shasum": ""
             },
             "require": {
@@ -1037,7 +1201,7 @@
                 "debugger",
                 "yii2"
             ],
-            "time": "2015-09-29 10:36:38"
+            "time": "2015-11-20 13:52:39"
         },
         {
             "name": "yiisoft/yii2-faker",
@@ -1045,12 +1209,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-faker.git",
-                "reference": "6968c97fd2e951e8260d1ccc6f5e2109407290eb"
+                "reference": "9d7b306ebdeef792adb796e5db1e57e068a5041a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-faker/zipball/6968c97fd2e951e8260d1ccc6f5e2109407290eb",
-                "reference": "6968c97fd2e951e8260d1ccc6f5e2109407290eb",
+                "url": "https://api.github.com/repos/yiisoft/yii2-faker/zipball/9d7b306ebdeef792adb796e5db1e57e068a5041a",
+                "reference": "9d7b306ebdeef792adb796e5db1e57e068a5041a",
                 "shasum": ""
             },
             "require": {
@@ -1084,7 +1248,7 @@
                 "faker",
                 "yii2"
             ],
-            "time": "2015-09-29 10:49:25"
+            "time": "2015-11-15 11:52:16"
         },
         {
             "name": "yiisoft/yii2-gii",
@@ -1092,12 +1256,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-gii.git",
-                "reference": "3946123b429ef6aa95618a4159f3c0360054ddec"
+                "reference": "754825cb7ef605f552b4f507fe25fa94645312f6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-gii/zipball/3946123b429ef6aa95618a4159f3c0360054ddec",
-                "reference": "3946123b429ef6aa95618a4159f3c0360054ddec",
+                "url": "https://api.github.com/repos/yiisoft/yii2-gii/zipball/754825cb7ef605f552b4f507fe25fa94645312f6",
+                "reference": "754825cb7ef605f552b4f507fe25fa94645312f6",
                 "shasum": ""
             },
             "require": {
@@ -1137,12 +1301,16 @@
                 "gii",
                 "yii2"
             ],
-            "time": "2015-10-07 14:54:57"
+            "time": "2015-11-19 14:53:57"
         }
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "kartik-v/yii2-grid": 20,
+        "kartik-v/yii2-krajee-base": 20,
+        "kartik-v/yii2-mpdf": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {

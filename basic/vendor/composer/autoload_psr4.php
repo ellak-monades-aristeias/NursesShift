@@ -16,6 +16,9 @@ return array(
     'yii\\bootstrap\\' => array($vendorDir . '/yiisoft/yii2-bootstrap'),
     'yii\\' => array($vendorDir . '/yiisoft/yii2'),
     'yii2fullcalendar\\' => array($vendorDir . '/philippfrenzel/yii2fullcalendar'),
+    'kartik\\mpdf\\' => array($vendorDir . '/kartik-v/yii2-mpdf'),
+    'kartik\\grid\\' => array($vendorDir . '/kartik-v/yii2-grid'),
+    'kartik\\base\\' => array($vendorDir . '/kartik-v/yii2-krajee-base'),
     'cebe\\markdown\\' => array($vendorDir . '/cebe/markdown'),
     'Faker\\' => array($vendorDir . '/fzaninotto/faker/src/Faker'),
 );

@@ -69,5 +69,6 @@ return [
     'Sh Elaxisto Prosopiko' => 'Ελάχιστο Προσωπτικό',
     'Ns Nurse ID' => 'Νοσηλευτής',
     'Create Nurseshift' => 'Δημιουργία Βάρδιας Νοσηλευτή',
+    'Nurseshifts' => 'Βάρδιες Νοσηλευτών',
 	'Thank you for contacting us. We will respond to you as soon as possible.' => 'Ευχαριστούμε για την επικοινωνία. Θα σας απαντήσουμε το γρηγορότερο δυνατό.'
 ];
