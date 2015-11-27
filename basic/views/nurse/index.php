@@ -26,8 +26,7 @@ $this->params['breadcrumbs'][] = $this->title;
             ['class' => 'yii\grid\SerialColumn'],
 
             'ID',
-            'nu_onoma',
-            'nu_epitheto',
+            'fullName',
             'nu_bathmida',
             'nu_is_meiomenou',
             // 'nu_ores_ergasias',

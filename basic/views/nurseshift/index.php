@@ -26,11 +26,8 @@ $nurseModel = new \app\models\Nurse();
         'filterModel' => $searchModel,
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
-
-            //'ID',
-            //'ns_nurseID',
         [
-            'attribute' => 'ns_name',
+            'attribute' => 'ns_nurseID',
             'label' => 'Όνομα Νοσηλευτή',
             'value' => function($model, $index, $dataColumn) {
                 // more optimized than $model->role->name;
@@ -38,10 +35,30 @@ $nurseModel = new \app\models\Nurse();
                 return $roleDropdown[$model->ns_nurseID];
             },
             'filter' => \app\models\Nurse::dropdown(),
-            //'filter'=>ArrayHelper::map(\app\models\Nurse::find()->asArray()->all(), 'ID', 'nu_onoma', 'nu_epitheto'),
-        ],     
-            'ns_shiftID',
-            'ns_type',
+            //'filter'=>ArrayHelper::map(\app\models\Nurse::find()->asArray()->all(), 'ID', 'nu_onoma'),
+        ],
+            [
+                'attribute' => 'ns_type',
+                'label' => 'Τύπος',
+                'value' => 'nsType.description',
+                /*'value' => function($model, $index, $dataColumn) {
+                    // more optimized than $model->role->name;
+                    $roleDropdown = \app\models\Types::dropdown();
+                    return $roleDropdown[$model->ns_type];
+                },*/ 
+                'filter' => \app\models\Types::dropdown(),
+            ],
+            [
+                'attribute' => 'ns_shiftID',
+                'label' => 'Ημερομηνία',
+                'value' => function($model, $index, $dataColumn) {
+                    // more optimized than $model->role->name;
+                    $roleDropdown = \app\models\Shifts::dropdown();
+                    return $roleDropdown[$model->ns_nurseID];
+                },   
+                'filter' => \yii\jui\DatePicker::widget(['language' => 'el', 'dateFormat' => 'dd-MM-yyyy']),
+                'format' => 'html',
+            ],
             'ns_hours',
 
             ['class' => 'yii\grid\ActionColumn'],

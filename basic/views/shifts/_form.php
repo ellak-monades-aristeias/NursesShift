@@ -1,7 +1,9 @@
 <?php
 
 use yii\helpers\Html;
-use yii\widgets\ActiveForm;
+//use yii\widgets\ActiveForm;
+use kartik\form\ActiveForm;
+use kartik\widgets\DatePicker;
 
 /* @var $this yii\web\View */
 /* @var $model app\models\Shifts */
@@ -12,7 +14,7 @@ use yii\widgets\ActiveForm;
 
     <?php $form = ActiveForm::begin(); ?>
 
-    <?= $form->field($model, 'sh_date')->widget(\yii\jui\DatePicker::classname(), [
+    <?= $form->field($model, 'sh_date')->widget(DatePicker::classname(), [
     'language' => 'el',
     'dateFormat' => 'yyyy-M-dd',
 ]) ?>
