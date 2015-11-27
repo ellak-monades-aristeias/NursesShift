@@ -70,5 +70,6 @@ return [
     'Ns Nurse ID' => 'Νοσηλευτής',
     'Create Nurseshift' => 'Δημιουργία Βάρδιας Νοσηλευτή',
     'Nurseshifts' => 'Βάρδιες Νοσηλευτών',
+    'Full Name' => 'Ονοματεπώνυμο',
 	'Thank you for contacting us. We will respond to you as soon as possible.' => 'Ευχαριστούμε για την επικοινωνία. Θα σας απαντήσουμε το γρηγορότερο δυνατό.'
 ];

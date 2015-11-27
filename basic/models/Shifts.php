@@ -72,4 +72,12 @@ class Shifts extends \yii\db\ActiveRecord
     {
         return new ShiftsQuery(get_called_class());
     }
+    
+    public static function dropdown() {
+       $models = static::find()->all();
+       foreach ($models as $model) {
+           $dropdown[$model->ID] = $model->sh_date;
+       }
+       return $dropdown;
+   }
 }

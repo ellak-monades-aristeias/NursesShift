@@ -60,10 +60,10 @@ class NurseShiftSearch extends NurseShift
      */
     public function search($params)
     {
-        $query = NurseShift::find();
+        $query = NurseShift::find()->leftJoin('nurse','nurse_shift.ns_nurseID=nurse.ID');
 
         // add conditions that should always apply here
-        $query->innerJoin("nurse", "nurse.ID=nurse_shift.ns_nurseID");
+        //$query->innerJoin("nurse", "nurse.ID=nurse_shift.ns_nurseID");
         //$query->with("profile"); // eager load to reduce number of queries        
 
         $dataProvider = new ActiveDataProvider([
@@ -73,14 +73,14 @@ class NurseShiftSearch extends NurseShift
         $this->load($params);
 
         // add extra sort attributes
-        $addSortAttributes = ["full_name"];
+        /*$addSortAttributes = ["full_name"];
         foreach ($addSortAttributes as $addSortAttribute) {
             $dataProvider->sort->attributes[$addSortAttribute] = [
                 'asc' => [$addSortAttribute => SORT_ASC],
                 'desc' => [$addSortAttribute => SORT_DESC],
                 'label' => $this->getAttributeLabel($addSortAttribute),
             ];
-        }        
+        } */       
         
         if (!$this->validate()) {
             // uncomment the following line if you do not want to return any records when validation fails

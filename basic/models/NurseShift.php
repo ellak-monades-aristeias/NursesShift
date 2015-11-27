@@ -52,6 +52,7 @@ class NurseShift extends \yii\db\ActiveRecord
             'ns_shiftID' => Yii::t('app', 'Ns Shift ID'),
             'ns_type' => Yii::t('app', 'Ns Type'),
             'ns_hours' => Yii::t('app', 'Ns Hours'),
+            'Team'=>Yii::t('app', 'Full Name')
         ];
     }
 
@@ -77,6 +78,17 @@ class NurseShift extends \yii\db\ActiveRecord
     public function getNsType()
     {
         return $this->hasOne(Types::className(), ['ID' => 'ns_type']);
+    }
+    
+    /* ActiveRelation */
+    public function getNurse()
+    {
+        return $this->hasOne(Nurse::className(), ['ID'=>'ns_nurseID']);
+    }
+
+    /* Getter for country name */
+    public function getNurseName() {
+        return $this->fullName;
     }
 
     /**

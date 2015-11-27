@@ -53,4 +53,12 @@ class Types extends \yii\db\ActiveRecord
     {
         return $this->hasMany(NurseShift::className(), ['ns_type' => 'ID']);
     }
+
+    public static function dropdown() {
+       $models = static::find()->all();
+       foreach ($models as $model) {
+           $dropdown[$model->ID] = $model->description;
+       }
+       return $dropdown;
+   }
 }

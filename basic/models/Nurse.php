@@ -67,6 +67,7 @@ class Nurse extends \yii\db\ActiveRecord
             'nu_upoloipo_adeias' => 'Υπόλοιπο Άδειας',
             'nu_upoloipo_repo' => 'Υπόλοιπο Ρεπό',
             'nu_profile' => 'Προφίλ',
+            'fullName'=>Yii::t('app', 'Full Name'),
         ];
     }
 
@@ -109,5 +110,13 @@ class Nurse extends \yii\db\ActiveRecord
             $dropdown[$model->ID] = $model->nu_onoma .' '. $model->nu_epitheto;
         }
         return $dropdown;
+    }
+    
+    /* Getter for person full name */
+    public function getFullName() {
+        return $this->nu_onoma . ' ' . $this->nu_epitheto;
+    }
+    public function __toString() {
+        return $this->nu_onoma . ' ' . $this->nu_epitheto;
     }
 }
